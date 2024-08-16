@@ -34,7 +34,7 @@ function Hero() {
             <img src={githubIcon} alt="Github Icon" />
           </a>
         </span>
-        <p className={styles.description}>With a passion for developing modern React web apps for commercial buisnesses.</p>
+        <p className={styles.description}>Current computer science student with a passion for web development and data science.</p>
         <a href={CV} download>
           <button className="hover" download>
             Resume
