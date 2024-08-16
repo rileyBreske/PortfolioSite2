@@ -25,6 +25,12 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="C++" />
         <SkillList src={checkMarkIcon} skill="Wordpress" />
       </div>
+      <hr />
+      <div className={styles.skillList}>
+        <SkillList src={checkMarkIcon} skill="Adobe Suites" />
+        <SkillList src={checkMarkIcon} skill="Canva" />
+        <SkillList src={checkMarkIcon} skill="Figma" />
+      </div>
     </section>
   );
 }

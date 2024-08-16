@@ -1,9 +1,10 @@
 import styles from "./ProjectsStyles.module.css";
 import mash from "../../assets/mash.png";
 import rise from "../../assets/rise.png";
-import eda from "../../assets/graph.png";
+import eda from "../../assets/eda.png";
 import edaPDF from "../../assets/Exploratory Data Analysis_ Airline Delays.pdf";
-import fitLift from "../../assets/fitlift.png";
+import ranforestPDF from "../../assets/Political Party Classification Using Random Forest.pdf";
+import ranforest from "../../assets/ranforest.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -16,7 +17,9 @@ function Projects() {
         <a href={edaPDF} target="_blank" rel="noopener noreferrer">
           <ProjectCard src={eda} h3="Airline EDA" p="R programming" />
         </a>
-        <ProjectCard src={fitLift} link="" h3="Ran. Forest Model" p="R programming" />
+        <a href={ranforestPDF} target="_blank" rel="noopener noreferrer">
+          <ProjectCard src={ranforest} h3="Ran. Forest Model" p="R programming" />
+        </a>
       </div>
     </section>
   );
