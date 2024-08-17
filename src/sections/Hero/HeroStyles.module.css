@@ -84,6 +84,11 @@
   }
 }
 
+.location {
+  font-size: 16px;
+  margin-top: -16px;
+}
+
 @media (width >= 800px) {
   .container {
     flex-direction: row-reverse;

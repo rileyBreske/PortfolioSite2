@@ -26,6 +26,7 @@ function Hero() {
           Riley <br /> Breske
         </h1>
         <h2>Web Developer</h2>
+        <p className={styles.location}>&#128205;Winston-Salem, NC</p>
         <span>
           <a href="https://linkedin.com/in/riley-breske-1a0370198" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
