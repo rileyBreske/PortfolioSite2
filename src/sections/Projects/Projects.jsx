@@ -12,7 +12,7 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-        <ProjectCard src={mash} link="https://www.mashelite.com/" h3="Mash Elite" p="Wordpress Dev" />
+        <ProjectCard src={mash} h3="Mash Elite" p="Wordpress Dev" />
         <ProjectCard src={profilerV2} link="https://profilerv2.vercel.app/" h3="ProfilerV2" p="Next.js/ Supabase" />
         <a href={edaPDF} target="_blank" rel="noopener noreferrer">
           <ProjectCard src={eda} h3="Airline EDA" p="R programming" />

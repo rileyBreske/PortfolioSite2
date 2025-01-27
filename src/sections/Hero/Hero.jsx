@@ -25,7 +25,7 @@ function Hero() {
         <h1>
           Riley <br /> Breske
         </h1>
-        <h2>Web Developer</h2>
+        <h2>Student</h2>
         <p className={styles.location}>&#128205;Santa Rosa, FL</p>
         <span>
           <a href="https://linkedin.com/in/riley-breske-1a0370198" target="_blank">
@@ -37,9 +37,7 @@ function Hero() {
         </span>
         <p className={styles.description}>Current computer science student with a passion for web development and data science.</p>
         <a href={CV} download>
-          <button className="hover" download>
-            Resume
-          </button>
+          <button className="hover">Resume</button>
         </a>
       </div>
     </section>
