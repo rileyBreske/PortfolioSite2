@@ -17,28 +17,40 @@ function Hero() {
 
   return (
     <section id="hero" className={styles.container}>
-      <div className={styles.colorModeContainer}>
-        <img className={styles.hero} src={heroImg} alt="profile picture of Riley Breske" />
-        <img className={styles.colorMode} src={themeIcon} alt="color mode icon" onClick={toggleTheme} />
-      </div>
-      <div className={styles.info}>
-        <h1>
-          Riley <br /> Breske
-        </h1>
-        <h2>Student</h2>
-        <p className={styles.location}>&#128205;Santa Rosa, FL</p>
-        <span>
-          <a href="https://linkedin.com/in/riley-breske-1a0370198" target="_blank">
-            <img src={linkedinIcon} alt="Linkedin icon" />
-          </a>
-          <a href="https://github.com/rileyBreske" target="_blank">
-            <img src={githubIcon} alt="Github Icon" />
-          </a>
-        </span>
-        <p className={styles.description}>Current computer science student with a passion for web development and data science.</p>
-        <a href={CV} download>
-          <button className="hover">Resume</button>
-        </a>
+      <div className={styles.heroContent}>
+        <div className={styles.colorModeContainer}>
+          <img className={styles.hero} src={heroImg} alt="profile picture of Riley Breske" />
+          <div className={styles.colorMode} onClick={toggleTheme}>
+            <img src={themeIcon} alt="color mode icon" />
+          </div>
+        </div>
+        <div className={styles.info}>
+          <div className={styles.name}>
+            <h1>Riley Breske</h1>
+            <h2 className={styles.title}>Computer Science Student</h2>
+          </div>
+          <p className={styles.location}>
+            <span>📍</span>
+            Santa Rosa, FL
+          </p>
+          <div className={styles.socialLinks}>
+            <a href="https://linkedin.com/in/riley-breske-1a0370198" target="_blank" rel="noopener noreferrer">
+              <img src={linkedinIcon} alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/rileyBreske" target="_blank" rel="noopener noreferrer">
+              <img src={githubIcon} alt="GitHub" />
+            </a>
+          </div>
+          <p className={styles.description}>
+            Passionate about web development and data science. Building innovative solutions and exploring the intersection of technology and
+            creativity.
+          </p>
+          <div className={styles.ctaButton}>
+            <a href={CV} download>
+              <button>Download Resume</button>
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );

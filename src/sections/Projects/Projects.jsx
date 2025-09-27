@@ -5,6 +5,7 @@ import eda from "../../assets/eda.png";
 import edaPDF from "../../assets/Exploratory Data Analysis_ Airline Delays.pdf";
 import ranforestPDF from "../../assets/Political Party Classification Using Random Forest.pdf";
 import ranforest from "../../assets/ranforest.png";
+import rosterrecap from "../../assets/rosterrecap.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
@@ -12,13 +13,14 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-        <ProjectCard src={mash} h3="Mash Elite" p="Wordpress Dev" />
-        <ProjectCard src={profilerV2} link="https://profilerv2.vercel.app/" h3="ProfilerV2" p="Next.js/ Supabase" />
+        <ProjectCard src={mash} h3="Mash Elite" p="WordPress Development" />
+        <ProjectCard src={profilerV2} link="https://profilerv2.vercel.app/" h3="ProfilerV2" p="Next.js & Supabase" />
+        <ProjectCard src={rosterrecap} link="https://rosterrecap.com" h3="RosterRecap" p="React & Firebase" />
         <a href={edaPDF} target="_blank" rel="noopener noreferrer">
-          <ProjectCard src={eda} h3="Airline EDA" p="R programming" />
+          <ProjectCard src={eda} h3="Airline EDA" p="R Programming" />
         </a>
         <a href={ranforestPDF} target="_blank" rel="noopener noreferrer">
-          <ProjectCard src={ranforest} h3="Ran. Forest Model" p="R programming" />
+          <ProjectCard src={ranforest} h3="Random Forest Model" p="R Programming" />
         </a>
       </div>
     </section>

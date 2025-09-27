@@ -2,78 +2,173 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 4rem 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-form {
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contactInfo {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 2rem;
+  text-align: center;
 }
 
-textarea,
-input:not([type='submit']) {
-  height: 50px;
-  padding-left: 16px;
-  width: 250px;
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: var(--surface-color);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
 }
 
-textarea {
-  padding-top: 16px;
-  resize: none;
-  height: 250px;
+.contactIcon {
+  width: 40px;
+  height: 40px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
 }
 
-input,
-textarea {
-  border-radius: 20px;
-  border: #888 1px solid;
-  box-sizing: border-box;
-  justify-self: center;
-  background-color: var(--background-color);
+.contactLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.contactValue {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.formLabel {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.formInput,
+.formTextarea {
+  padding: 1rem 1.25rem;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--surface-color);
   color: var(--form-text-color);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  resize: vertical;
 }
 
-::placeholder {
-  color: var(--form-text-color);
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  border-color: var(--btn-color);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
 }
 
-input[type='submit'] {
-  background-color: var(--btn-color);
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.formTextarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.submitButton {
+  background: var(--gradient-primary);
   color: var(--btn-text-color);
   border: none;
-  border-radius: 20px;
-  width: 126px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-  margin: auto;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--shadow-md);
+  align-self: center;
+  min-width: 150px;
 }
 
-input[type='submit']:hover {
-  transform: scale(1.05);
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }
 
-input[type='submit']:active {
-  transform: translateY(2px);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+.submitButton:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-md);
 }
 
-@media (width >= 800px) {
-  textarea,
-  input:not([type='submit']) {
-    width: 600px;
-    font-size: 20px;
-  }
-  form {
-    gap: 40px;
+@media (min-width: 640px) {
+  .container {
+    padding: 4rem 40px;
   }
 }
 
-@media (width >= 1400px) {
-  textarea,
-  input:not([type='submit']) {
-    width: 800px;
+@media (min-width: 768px) {
+  .contactContent {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+
+  .contactInfo {
+    text-align: left;
+  }
+
+  .contactItem {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .form {
+    max-width: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 4rem 60px;
+  }
+
+  .contactContent {
+    gap: 4rem;
   }
 }
