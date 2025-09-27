@@ -15,31 +15,31 @@ function Skills() {
         <div className={styles.skillCategory}>
           <h3 className={styles.categoryTitle}>Frontend Development</h3>
           <div className={styles.skillList}>
-            <SkillList src={checkMarkIcon} skill="HTML" />
-            <SkillList src={checkMarkIcon} skill="CSS" />
-            <SkillList src={checkMarkIcon} skill="JavaScript" />
-            <SkillList src={checkMarkIcon} skill="React" />
-            <SkillList src={checkMarkIcon} skill="Next.js" />
+            <SkillList src={checkMarkIcon} skill="HTML" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="CSS" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="JavaScript" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="React" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="Next.js" styles={styles} />
           </div>
         </div>
         <div className={styles.skillCategory}>
           <h3 className={styles.categoryTitle}>Backend & Languages</h3>
           <div className={styles.skillList}>
-            <SkillList src={checkMarkIcon} skill="Node.js" />
-            <SkillList src={checkMarkIcon} skill="Python" />
-            <SkillList src={checkMarkIcon} skill="R" />
-            <SkillList src={checkMarkIcon} skill="C++" />
-            <SkillList src={checkMarkIcon} skill="SQL" />
+            <SkillList src={checkMarkIcon} skill="Node.js" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="Python" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="R" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="C++" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="SQL" styles={styles} />
           </div>
         </div>
         <div className={styles.skillCategory}>
           <h3 className={styles.categoryTitle}>Design & Tools</h3>
           <div className={styles.skillList}>
-            <SkillList src={checkMarkIcon} skill="Figma" />
-            <SkillList src={checkMarkIcon} skill="Adobe Creative Suite" />
-            <SkillList src={checkMarkIcon} skill="Canva" />
-            <SkillList src={checkMarkIcon} skill="WordPress" />
-            <SkillList src={checkMarkIcon} skill="Git" />
+            <SkillList src={checkMarkIcon} skill="Figma" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="Adobe Creative Suite" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="Canva" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="WordPress" styles={styles} />
+            <SkillList src={checkMarkIcon} skill="Git" styles={styles} />
           </div>
         </div>
       </div>

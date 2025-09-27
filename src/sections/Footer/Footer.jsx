@@ -11,7 +11,7 @@ function Footer() {
           <a href="https://github.com/rileyBreske" target="_blank" rel="noopener noreferrer" className={styles.footerLink}>
             GitHub
           </a>
-          <a href="mailto:riley.breske@example.com" className={styles.footerLink}>
+          <a href="mailto:rileybreske@outlook.com" className={styles.footerLink}>
             Email
           </a>
         </div>
