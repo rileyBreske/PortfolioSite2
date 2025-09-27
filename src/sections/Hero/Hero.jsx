@@ -31,7 +31,7 @@ function Hero() {
           </div>
           <p className={styles.location}>
             <span>📍</span>
-            Santa Rosa, FL
+            Santa Rosa Beach, FL
           </p>
           <div className={styles.socialLinks}>
             <a href="https://linkedin.com/in/riley-breske-1a0370198" target="_blank" rel="noopener noreferrer">
