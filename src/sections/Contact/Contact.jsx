@@ -10,7 +10,7 @@ function Contact() {
             <div className={styles.contactIcon}>📧</div>
             <div>
               <h3 className={styles.contactLabel}>Email</h3>
-              <p className={styles.contactValue}>riley.breske@example.com</p>
+              <p className={styles.contactValue}>rileybreske@outlook.com</p>
             </div>
           </div>
           <div className={styles.contactItem}>
@@ -45,13 +45,7 @@ function Contact() {
             <label htmlFor="message" className={styles.formLabel}>
               Message
             </label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Tell me about your project or just say hello!"
-              className={styles.formTextarea}
-              required
-            ></textarea>
+            <textarea name="message" id="message" placeholder="Tell me whats up!" className={styles.formTextarea} required></textarea>
           </div>
           <button type="submit" className={styles.submitButton}>
             Send Message
