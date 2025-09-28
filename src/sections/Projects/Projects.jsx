@@ -15,7 +15,7 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard src={mash} h3="Mash Elite" p="WordPress Development" />
         <ProjectCard src={profilerV2} link="https://profilerv2.vercel.app/" h3="ProfilerV2" p="Next.js & Supabase" />
-        <ProjectCard src={rosterrecap} link="https://rosterrecap.com" h3="RosterRecap" p="React & Firebase" />
+        <ProjectCard src={rosterrecap} link="https://rosterrecap.com" h3="RosterRecap" p="Next.js & Supabase" />
         <a href={edaPDF} target="_blank" rel="noopener noreferrer">
           <ProjectCard src={eda} h3="Airline EDA" p="R Programming" />
         </a>
