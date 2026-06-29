@@ -17,7 +17,7 @@ function Contact() {
             <div className={styles.contactIcon}>📍</div>
             <div>
               <h3 className={styles.contactLabel}>Location</h3>
-              <p className={styles.contactValue}>Santa Rosa, FL</p>
+              <p className={styles.contactValue}>Santa Rosa Beach, FL</p>
             </div>
           </div>
           <div className={styles.contactItem}>

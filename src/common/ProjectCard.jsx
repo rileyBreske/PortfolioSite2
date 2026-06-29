@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProjectCard.module.css";
 
-function ProjectCard({ src, link, h3, p, external = true }) {
+function ProjectCard({ src, link, h3, p, description, external = true }) {
   const cardContent = (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -14,7 +14,8 @@ function ProjectCard({ src, link, h3, p, external = true }) {
       </div>
       <div className={styles.content}>
         <h3>{h3}</h3>
-        <p>{p}</p>
+        <p className={styles.tech}>{p}</p>
+        {description && <p className={styles.description}>{description}</p>}
       </div>
     </div>
   );

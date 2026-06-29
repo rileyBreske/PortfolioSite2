@@ -90,9 +90,19 @@
   line-height: 1.3;
 }
 
-.content p {
+.tech {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--btn-color);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.9rem;
   color: var(--text-secondary);
   line-height: 1.5;
   flex-grow: 1;
@@ -107,7 +117,7 @@
     font-size: 1.1rem;
   }
 
-  .content p {
-    font-size: 0.9rem;
+  .description {
+    font-size: 0.85rem;
   }
 }

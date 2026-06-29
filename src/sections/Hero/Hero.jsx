@@ -27,7 +27,7 @@ function Hero() {
         <div className={styles.info}>
           <div className={styles.name}>
             <h1>Riley Breske</h1>
-            <h2 className={styles.title}>Computer Science Student</h2>
+            <h2 className={styles.title}>Full-Stack Developer · Auburn University</h2>
           </div>
           <p className={styles.location}>
             <span>📍</span>
@@ -42,8 +42,7 @@ function Hero() {
             </a>
           </div>
           <p className={styles.description}>
-            Passionate about web development and data science. Building innovative solutions and exploring the intersection of technology and
-            creativity.
+            CS student at Auburn University building full-stack products and cloud systems. Team USA Olympic Weightlifter — 2x National Champion, 1x International Medalist.
           </p>
           <div className={styles.ctaButton}>
             <a href={CV} download>
