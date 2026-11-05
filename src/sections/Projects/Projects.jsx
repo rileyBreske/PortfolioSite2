@@ -21,7 +21,7 @@ function Projects() {
         title="Pool Shark"
         subtitle="Field operations app for a Florida pool service company"
         tech="Next.js · TypeScript · Cloudflare Workers · D1 (SQLite) · Drizzle · Better Auth · Resend"
-        description="I work as a technician at Pool Shark, so I built the tool our crew was missing. It replaced text messages and a paper notebook with one mobile-first app for the owner and four technicians, covering about 300 pools."
+        description="Saw a business need and built the fix: one mobile-first app that replaced text messages and a paper notebook for the owner and four technicians, covering about 300 pools."
         images={[
           { src: poolsharkHero, label: "Overview", alt: "Pool Shark on three phones: live time clock, pool details, and the owner's overview with open repairs" },
           { src: poolsharkCrew, label: "Crew", alt: "Pool Shark crew screens: today's route and a pool's details with notes and repairs" },
