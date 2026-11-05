@@ -11,6 +11,11 @@ import FeaturedProject from "../../common/FeaturedProject";
 import poolsharkHero from "../../assets/poolshark-hero.jpg";
 import poolsharkCrew from "../../assets/poolshark-crew.jpg";
 import poolsharkAdmin from "../../assets/poolshark-admin.jpg";
+import psClock from "../../assets/poolshark-m-clock.jpg";
+import psRoute from "../../assets/poolshark-m-route.jpg";
+import psPool from "../../assets/poolshark-m-pool.jpg";
+import psRepairs from "../../assets/poolshark-m-repairs.jpg";
+import psEditor from "../../assets/poolshark-m-editor.jpg";
 
 function Projects() {
   return (
@@ -26,6 +31,13 @@ function Projects() {
           { src: poolsharkHero, label: "Overview", alt: "Pool Shark on three phones: live time clock, pool details, and the owner's overview with open repairs" },
           { src: poolsharkCrew, label: "Crew", alt: "Pool Shark crew screens: today's route and a pool's details with notes and repairs" },
           { src: poolsharkAdmin, label: "Owner", alt: "Pool Shark owner screens: crew status with repairs triage and the route editor" },
+        ]}
+        mobileImages={[
+          { src: psClock, caption: "Live time clock", alt: "Pool Shark time clock showing a running shift timer and Clock Out button" },
+          { src: psRoute, caption: "Today's route", alt: "Pool Shark route list with stops in order and an alert on one pool" },
+          { src: psPool, caption: "Pool details, notes & repairs", alt: "Pool Shark pool page with alert, notes, and a flagged repair" },
+          { src: psRepairs, caption: "Owner triages repairs", alt: "Pool Shark owner overview with crew status and open repairs" },
+          { src: psEditor, caption: "Route editor", alt: "Pool Shark route editor with two-day route and per-day stops" },
         ]}
         highlights={[
           { icon: "clock", title: "Time clock", text: "with a live timer, missed-punch warnings and one-tap timesheets texted to the owner." },
